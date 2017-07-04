@@ -42,6 +42,7 @@ public class BinarySearchTree
     public Node search(int key, boolean isRecursive)
     {
         //choose a search type
+        
         if (isRecursive)
             return recursiveSearch(root, key);
         else
