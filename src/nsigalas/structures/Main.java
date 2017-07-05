@@ -6,16 +6,16 @@ public class Main
 {
     public static void main(String args[])
     {
-        BinarySearchTree tree = new BinarySearchTree();
+        AVL_Tree tree = new AVL_Tree();
 
-        tree.insert(20);
-        tree.insert(30);
         tree.insert(10);
+        tree.insert(30);
+        tree.insert(50);
+        tree.insert(40);
+        tree.insert(60);
+        tree.insert(5);
+        tree.insert(90);
 
-        if (tree.search(20, false) != null)
-        {
-            System.out.println("Vrethike");
-        }
 
 
 

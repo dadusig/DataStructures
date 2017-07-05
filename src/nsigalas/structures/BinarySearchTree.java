@@ -7,6 +7,11 @@ public class BinarySearchTree
         int key;
         Node left, right;
 
+        public Node()
+        {
+
+        }
+
         public Node(int key, Node left, Node right)
         {
             this.key = key;
@@ -15,7 +20,7 @@ public class BinarySearchTree
         }
     }
 
-    private Node root;
+    Node root;
 
     public BinarySearchTree()
     {
@@ -42,7 +47,7 @@ public class BinarySearchTree
     public Node search(int key, boolean isRecursive)
     {
         //choose a search type
-        
+
         if (isRecursive)
             return recursiveSearch(root, key);
         else
