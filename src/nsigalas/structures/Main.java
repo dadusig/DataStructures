@@ -2,21 +2,23 @@ package nsigalas.structures;
 
 //for test purposes
 
+import java.io.IOException;
+
 public class Main
 {
-    public static void main(String args[])
+    public static void main(String args[]) throws IOException
     {
-        AVL_Tree tree = new AVL_Tree();
+        RedBlackTree rb = new RedBlackTree();
 
-        tree.insert(10);
-        tree.insert(30);
-        tree.insert(50);
-        tree.insert(40);
-        tree.insert(60);
-        tree.insert(5);
-        tree.insert(90);
+        rb.insert(10);
+        rb.insert(40);
+        rb.insert(50);
+        rb.insert(5);
+        rb.insert(20);
+        rb.insert(30);
+        rb.insert(15);
 
-
+        rb.exportToGraphViz();
 
 
         System.out.println();
